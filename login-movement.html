@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoveMent</title>
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/login-movement.css">
+    <!-- Links para trazer os ícones via CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
+</head>
+<body>
+    <header>
+        <section class="container-voltar">
+            <a href="index.html" class="link-voltar-texto">
+                <span class="fa fa-home"></span>
+                <span>Voltar</span>
+            </a>
+        </section>
+    </header>
+    <main>
+        <section class="container-login-movement">
+            <form class="login-form-movement">
+                <input type="text" name="email" id="login-movement-senha" placeholder="email" class="movement">
+                <input type="text" name="senha" id="login-movement-senha" placeholder="senha" class="movement">
+                <button type="submit" class="login-button-movement" disabled>Entrar</button>
+                <p id="error-message" class="error"></p>
+            </form>
+            <p class="esqueci-senha-texto">Esqueceu sua senha?</p>
+        </section>
+    </main>
+</body>
+<script src="/JS/login-movement.js"></script>
+</html>

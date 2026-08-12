@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#ffffff 0%,#f3f7fc 40%,#e6eef9 100%);
+    font-family: "DM Sans", sans-serif;
+    height: 100vh;
+}
+
+@media (max-width: 700px) {
+    body {
+        height: 100%;
+    }
+}
+
+.container-cabecalho {
+    font-weight: 700;
+    padding: 20px;
+}
+
+.navigation {
+    color: #1F3A5F;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width: 700px) {
+    .navigation {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        text-align: center;
+    }  
+}
+
+.main-container { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    gap: 15px;
+    padding: 40px 0px 0px;
+}
+
+@media (max-width: 700px) {
+    .main-container {
+        gap: 30px;
+        padding: 40px 0px;
+    }
+}
+
+.container-departamentos-ensino {
+    background-color: #1F3A5F;
+    border-radius: 8px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    width: 220px;
+    height: 220px;
+    gap: 30px;
+    /* padding: 10px 0px 0px; */
+}
+
+.container-texto {
+    font-weight: 600;
+}
+
+.container-departamentos-diaconato {
+    background-color: #1F3A5F;
+    border-radius: 8px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 220px;
+    gap: 30px;
+    /* padding: 10px 0px 0px; */
+}
+
+.container-departamentos-movement {
+    background-color: #1F3A5F;;
+    border-radius: 8px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    width: 220px;
+    height: 220px;
+    gap: 30px;
+    /* padding: 10px 0px 0px; */
+}
+
+img {
+    width: 200px;
+    height: 260px; 
+}
+
+.container-texto {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login departamento Ensino</title>
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="CSS/login-ensino.css">
+    <!-- Links para trazer os ícones via CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
+</head>
+<body>
+    <header>
+        <section class="container-voltar">
+            <a href="index.html" class="link-voltar-texto">
+                <span class="fa fa-home"></span>
+                <span>Voltar</span>
+            </a>
+        </section>
+    </header>
+    <main>
+        <section class="container-login-ensino">
+            <form class="login-form-ensino">
+                <input type="text" name="email" id="login-ensino-email" placeholder="email" class="login-input">
+                <input type="password" name="senha" id="login-ensino-senha" placeholder="senha" class="login-input" autocomplete="off">
+                <button type="submit" id="login-button" class="login-button">Entrar</button>
+                <p id="error-message" class="error"></p>
+            </form>
+            <p class="esqueci-senha-texto">Esqueceu sua senha?</p>
+        </section>
+    </main>
+</body>
+<script type="module" src="/JS/login-ensino.js"></script>
+</html>
