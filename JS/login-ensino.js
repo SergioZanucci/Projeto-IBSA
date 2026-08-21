@@ -26,15 +26,17 @@ function autenticarProfessor(email, senha) {
     for(let i = 0; i < listaProfessores.length; i++) {
 
         if(listaProfessores[i].email === email && listaProfessores[i].senha === Number (senha)) {
-            console.log("Professor encontrado");
-            console.log(listaProfessores[i].nome);
+            // console.log("Professor encontrado");
+            // console.log(listaProfessores[i].nome);
+
+            localStorage.setItem("professorNome", listaProfessores[i].nome);
+            localStorage.setItem("professorEmail", listaProfessores[i].email);
+
+            window.location.href = "Pages/professores.html";
             return;  
         }
 
-        localStorage.setItem("Sergio Henrique Zanucci", listaProfessores[i].nome);
-        localStorage.setItem("sergiozanu@gmail.com", listaProfessores[i].email);
-
-        window.localStorage.href = "/Pages/professores.html";
+       
        
     }
     msgDeErro.innerHTML = "Email ou senha invalido"
